@@ -1,0 +1,16 @@
+---
+export interface Props {
+	title: string;
+	href: string;
+}
+
+const { href, title } = Astro.props as Props;
+---
+
+<div class="pb-2">
+	<a href={href} rel="me">
+	   <button class="bg-cyan-500 hover:bg-cyan-400 rounded-full w-36 text-white p-2 font-bold">
+		  {title}
+	   </button>
+	</a>
+ </div>
